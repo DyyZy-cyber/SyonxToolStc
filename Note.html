@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Important Notes</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root{
+  --paper:#f6efe2;
+  --ink:#241f1a;
+  --line:#c9bfa8;
+  --accent:#3fa5c4;
+  --accent-2:#e85f5c;
+  --tab:#2fa66a;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  opacity: 0;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(36,31,26,.06) 1px, transparent 0) 0 0/22px 22px,
+    var(--paper);
+  color:var(--ink);
+  font-family:'JetBrains Mono', monospace;
+  min-height:100vh;
+  padding:32px 20px;
+  -webkit-tap-highlight-color:transparent;
+  animation:pageEnter .35s ease forwards;
+}
+
+@keyframes pageEnter{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+}
+
+.back{
+  width:100%;
+  height:46px;
+  border:none;
+  border-radius:12px;
+  background:var(--ink);
+  color:var(--paper);
+  font-family:'Fredoka',sans-serif;
+  font-size:15px;
+  cursor:pointer;
+  margin-bottom:28px;
+  transition: transform 0.1s ease
+}
+
+.back:active{
+  transform: scale(0.95);
+}
+
+.eyebrow{
+  display:inline-block;
+  font-family:'Fredoka',sans-serif;
+  font-weight:600;
+  font-size:13px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  background:var(--tab);
+  color:#fff;
+  padding:4px 10px;
+  border-radius:6px 6px 0 0;
+  transform:rotate(-1.5deg);
+}
+
+.title{
+  font-family:'Fredoka',sans-serif;
+  font-size:clamp(28px,4vw,42px);
+  line-height:1.05;
+  margin:8px 0;
+}
+
+.sub{
+  max-width:560px;
+  color:#5c5346;
+  line-height:1.6;
+  margin-bottom:26px;
+}
+
+.card{
+  background:#fff;
+  border-radius:16px;
+  padding:18px;
+  margin-bottom:18px;
+  outline:2px dashed var(--line);
+  outline-offset:-6px;
+  box-shadow:0 1px 0 rgba(36,31,26,.05);
+}
+
+.card h3{
+  font-family:'Fredoka',sans-serif;
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#5c5346;
+  line-height:1.8;
+  font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<button class="back" onclick="location.replace('index.html')">
+« Back
+</button>
+
+<span class="eyebrow">SYONX DOCS</span>
+
+<h1 class="title">
+Important Notes
+</h1>
+
+<p class="sub">
+Harap baca informasi berikut sebelum menggunakan tool agar proses preview dan pengunduhan sticker berjalan dengan lancar.
+</p>
+
+<div class="card">
+<h3>Format File yang Didukung</h3>
+
+<p>
+Pastikan file <strong>.zip</strong> yang diunggah berisi sticker dengan format <strong>.webp</strong>, <strong>.webm</strong>, atau <strong>.tgs</strong>. File ZIP tanpa format yang didukung tidak dapat diproses oleh sistem.
+</p>
+</div>
+
+<div class="card">
+<h3>Jangan Mengganggu Proses Preview</h3>
+
+<p>
+Harap tunggu hingga seluruh preview sticker selesai dimuat sebelum mengunggah file ZIP lain atau menekan tombol <strong>Delete All</strong>. Melakukan tindakan tersebut saat proses masih berlangsung dapat menyebabkan preview sticker tercampur, rusak, atau gagal ditampilkan dengan benar.
+</p>
+</div>
+
+</div>
+
+</body>
+</html>
